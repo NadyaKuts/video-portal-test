@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: #2f80ed;
+  --white: #ffffff;
+  --black: #000000;
+  --green: #27ae60;
+  --yellow: #f2c94c;
+  --red: #eb5757;
+  --gray: #4f4f4f;
+  --lightGrey: #e5e5e5;
+  --transparent: transparent;
+  --disabled: #b1b1b1;
+  --hovered: #5ea2ff;
+  --input: #efefef;
+}
+
+html,
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white);
+  min-height: calc(100vh);
+  scroll-behavior: smooth;
+  color: var(--contentPrimary);
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  background-color: var(--transparent);
+  padding: 0;
+}
+
+textarea,
+input,
+select {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+

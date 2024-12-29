@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.input {
+  background-color: var(--input);
+  padding-top: 5px;
+  padding-bottom: 3px;
+  padding-left: 5.61px;
+  width: 396px;
+  height: 24px;
+  color: #333333;
+}

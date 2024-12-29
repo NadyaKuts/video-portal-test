@@ -1,0 +1,39 @@
+.container {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: var(--lightGrey);
+  padding-top: 20px;
+  width: 263px;
+  height: 327px;
+  overflow: hidden;
+}
+
+.line {
+  background-color: var(--blue);
+  width: 100%;
+  height: 5px;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 31px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  width: 227px;
+  max-height: 69px;
+  overflow: hidden;
+  color: var(--gray);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+}
+
+.date {
+  margin-right: 31px;
+  margin-bottom: 35.8px;
+  margin-left: 168px;
+  color: var(--gray);
+  font-size: 12px;
+}

@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0 4px 0 var(--blue);
+  border-radius: 5px;
+  background-color: var(--blue);
+  padding-inline: 28px;
+  height: 32px;
+  color: var(--white);
+}
+
+.container:active {
+  transform: scale(0.98);
+  transition: 0s;
+  user-select: none;
+}
+
+.container:disabled {
+  cursor: auto;
+  box-shadow: none;
+  background-color: var(--disabled);
+  pointer-events: none;
+}
+
+.container:hover {
+  transition: 0.2s;
+  box-shadow: none;
+  background-color: var(--hovered);
+}

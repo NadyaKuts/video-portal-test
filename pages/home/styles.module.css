@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  gap: 28px;
+  padding-top: 31px;
+  padding-right: 28px;
+  padding-bottom: 29px;
+  padding-left: 32px;
+  width: 1200px;
+}
