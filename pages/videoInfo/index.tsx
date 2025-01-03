@@ -1,5 +1,4 @@
 import VideoCard from 'entities/VideoCard'
-import AuthModal from 'features/AuthModal'
 import Header from 'features/Header'
 import NotFound from 'pages/notFound'
 import { useEffect } from 'react'
@@ -23,7 +22,6 @@ export function VideoInfo() {
 
   return (
     <div className={styles.container}>
-      <AuthModal isOpen={true} onClose={() => {}} />
       <Header />
       {loading || videos.length === 0 ? (
         <div>Loading...</div>
