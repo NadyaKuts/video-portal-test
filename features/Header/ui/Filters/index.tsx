@@ -7,7 +7,7 @@ type Props = {
 }
 export default function Filters({ onClick }: Props) {
   return (
-    <button className={styles.container}>
+    <button className={styles.container} onClick={onClick}>
       <Icon color={colors.white} icon='settings' size={15} />
     </button>
   )

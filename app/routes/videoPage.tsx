@@ -1,13 +1,13 @@
-import { Welcome } from '../../pages/home'
+import { VideoInfo } from 'pages/videoInfo'
 import type { Route } from './+types/home'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'Video Portal' },
+    { title: 'Video Info' },
     { name: 'description', content: 'Welcome to Video Portal!' },
   ]
 }
 
 export default function Home() {
-  return <Welcome />
+  return <VideoInfo />
 }

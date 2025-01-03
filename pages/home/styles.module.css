@@ -8,11 +8,36 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   align-self: center;
   gap: 28px;
-  padding-top: 31px;
-  padding-right: 28px;
-  padding-bottom: 29px;
-  padding-left: 32px;
+  padding: 31px 28px 29px 32px;
   width: 1200px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select {
+  margin-left: 50px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  background-color: var(--white);
+  width: 105px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.pages {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
 }

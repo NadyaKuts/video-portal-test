@@ -2,13 +2,23 @@ import type { InputHTMLAttributes } from 'react'
 import Button from '../../../../shared/ui/Button'
 import styles from './styles.module.css'
 
-type Props = InputHTMLAttributes<HTMLInputElement>
+type Props = { onSearch?: () => void } & InputHTMLAttributes<HTMLInputElement>
 
-export default function Input(props: Props) {
+export default function SearchInput({ onSearch, ...props }: Props) {
   return (
     <div className={styles.inputContainer}>
-      <input className={styles.input} {...props} />
+      <input
+        className={styles.input}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            onSearch?.()
+          }
+        }}
+        onSubmit={onSearch}
+        {...props}
+      />
       <Button
+        onClick={onSearch}
         style={{
           width: 80,
           borderTopLeftRadius: 0,

@@ -7,4 +7,5 @@ export default {
   red: '#EB5757',
   gray: '#4F4F4F',
   lightGrey: '#E5E5E5',
+  errorGray: '#828282',
 } as const
